@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/text" />
+
+        <TextView
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/text2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#BA8A13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/viewoo" />
+            <TextView
+
+                android:id="@+id/Data"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_20sdp"
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="دائن"
+                android:textColor="#BA8A13"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/viewoo" />
+
+            <TextView
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/Data"
+                app:layout_constraintTop_toBottomOf="@id/viewoo"
+
+                app:layout_constraintBottom_toTopOf="@id/view"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="#BA8A13"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+
+                android:id="@+id/space" />
+
+            <TextView
+                android:id="@+id/typefile"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:gravity="center"
+                android:text="مدين"
+                android:textColor="#BA8A13"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintStart_toEndOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/viewoo" />
+
+            <TextView
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/typefile"
+                app:layout_constraintTop_toBottomOf="@id/viewoo"
+
+                app:layout_constraintBottom_toTopOf="@id/view"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="#BA8A13"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+
+                android:id="@+id/space2" />
+
+            <TextView
+                android:id="@+id/case2"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+
+                android:gravity="center"
+                android:text="صافي الحساب"
+                android:textColor="#BA8A13"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/space2"
+                app:layout_constraintTop_toBottomOf="@id/viewoo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#BA8A13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Data"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/view" />
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           tools:listitem="@layout/item_malya_too"
+           app:layout_constraintTop_toBottomOf="@id/view"
+           app:layout_constraintBottom_toBottomOf="parent"
+
+           android:id="@+id/rec"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

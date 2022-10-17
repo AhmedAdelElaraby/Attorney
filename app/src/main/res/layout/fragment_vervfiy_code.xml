@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".vervfiyCode">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_280sdp"
+            android:background="@drawable/back"
+            android:id="@+id/l1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/l1"
+            android:textSize="@dimen/_15sdp"
+            android:textAllCaps="false"
+            android:textColor="#BA8A13"
+            android:text="@string/password_recovery"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            android:textSize="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textColor="#17335B"
+            android:text="@string/please_enter_the_activation_code"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/text2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Activation_Code"
+            android:textColor="#17335B"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:id="@+id/textcode" />
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/textcode"
+            android:layoutDirection="ltr"
+            android:maxLength="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/_20sdp"
+            app:pinAnimationType="popIn"
+            app:pinBackgroundIsSquare="true"
+            app:pinLineColors="#27A4DA"
+            app:pinLineStroke="@dimen/_2sdp"
+            app:pinLineStrokeSelected="@dimen/_4sdp"
+            app:pinTextBottomPadding="@dimen/_20sdp"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Resend"
+            android:textColor="#17335B"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_pin_entry"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:id="@+id/forgetPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/l"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_2sdp"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/teraninja_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/development_by"
+                android:textSize="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="#18A7E0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/company_tera_ninja_2022"
+                android:layout_gravity="center"
+                android:textColor="#18A7E0" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

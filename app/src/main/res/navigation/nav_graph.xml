@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/choseLoginOrRegister">
+
+    <fragment
+        android:id="@+id/choseLoginOrRegister"
+        android:name="com.teraninja.mohamy.ChoseLoginOrRegister"
+        android:label="fragment_chose_login_or_register"
+        tools:layout="@layout/fragment_chose_login_or_register" >
+        <action
+            android:id="@+id/action_choseLoginOrRegister_to_loginEmploye"
+            app:destination="@id/loginEmploye" />
+        <action
+            android:id="@+id/action_choseLoginOrRegister_to_login_Customer"
+            app:destination="@id/login_Customer" />
+        <action
+            android:id="@+id/action_choseLoginOrRegister_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_choseLoginOrRegister_to_homeClient"
+            app:destination="@id/homeClient" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginEmploye"
+        android:name="com.teraninja.mohamy.LoginEmploye"
+        android:label="fragment_login_employe"
+        tools:layout="@layout/fragment_login_employe" >
+        <action
+            android:id="@+id/action_loginEmploye_to_frogetPassword"
+            app:destination="@id/frogetPassword" />
+        <action
+            android:id="@+id/action_loginEmploye_to_homeEmployee"
+            app:destination="@id/homeEmployee" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_Customer"
+        android:name="com.teraninja.mohamy.Login_Customer"
+        android:label="fragment_login__customer"
+        tools:layout="@layout/fragment_login__customer" >
+        <action
+            android:id="@+id/action_login_Customer_to_frogetPassword"
+            app:destination="@id/frogetPassword" />
+        <action
+            android:id="@+id/action_login_Customer_to_homeClient"
+            app:destination="@id/homeClient" />
+        <action
+            android:id="@+id/action_login_Customer_to_vervfiyCode"
+            app:destination="@id/vervfiyCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/frogetPassword"
+        android:name="com.teraninja.mohamy.frogetPassword"
+        android:label="fragment_froget_password"
+        tools:layout="@layout/fragment_froget_password" >
+        <action
+            android:id="@+id/action_frogetPassword_to_fragmentVerfiyNumberByPassword"
+            app:destination="@id/fragmentVerfiyNumberByPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/vervfiyCode"
+        android:name="com.teraninja.mohamy.vervfiyCode"
+        android:label="fragment_vervfiy_code"
+        tools:layout="@layout/fragment_vervfiy_code" >
+        <argument
+            android:name="number"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            android:defaultValue="def" />
+        <action
+            android:id="@+id/action_vervfiyCode_to_login_Customer"
+            app:destination="@id/login_Customer" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPassword"
+        android:name="com.teraninja.mohamy.NewPassword"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <argument
+            android:name="number"
+            app:argType="string"
+            android:defaultValue="def" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            android:defaultValue="def" />
+        <action
+            android:id="@+id/action_newPassword_to_login_Customer"
+            app:destination="@id/login_Customer" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.teraninja.mohamy.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_vervfiyCode"
+            app:destination="@id/vervfiyCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeEmployee"
+        android:name="com.teraninja.mohamy.HomeEmployee"
+        android:label="fragment_home_employee"
+        tools:layout="@layout/fragment_home_employee" >
+        <action
+            android:id="@+id/action_homeEmployee_to_salary"
+            app:destination="@id/salary" />
+        <action
+            android:id="@+id/action_homeEmployee_to_admin_requests"
+            app:destination="@id/admin_requests" />
+        <action
+            android:id="@+id/action_homeEmployee_to_customers2"
+            app:destination="@id/customers2" />
+        <action
+            android:id="@+id/action_homeEmployee_to_sessions"
+            app:destination="@id/sessions" />
+        <action
+            android:id="@+id/action_homeEmployee_to_elmalya"
+            app:destination="@id/elmalya" />
+        <action
+            android:id="@+id/action_homeEmployee_to_trial"
+            app:destination="@id/trial" />
+        <action
+            android:id="@+id/action_homeEmployee_to_allTask"
+            app:destination="@id/allTask" />
+        <action
+            android:id="@+id/action_homeEmployee_to_call_Medie"
+            app:destination="@id/call_Medie" />
+        <action
+            android:id="@+id/action_homeEmployee_to_detilseTases"
+            app:destination="@id/detilseTases" />
+        <action
+            android:id="@+id/action_homeEmployee_to_loginEmploye"
+            app:destination="@id/loginEmploye" />
+    </fragment>
+    <fragment
+        android:id="@+id/salary"
+        android:name="com.teraninja.mohamy.Salary"
+        android:label="fragment_salary"
+        tools:layout="@layout/fragment_salary" />
+    <fragment
+        android:id="@+id/admin_requests"
+        android:name="com.teraninja.mohamy.Admin_requests"
+        android:label="fragment_admin_requests"
+        tools:layout="@layout/fragment_admin_requests" />
+    <fragment
+        android:id="@+id/customers2"
+        android:name="com.teraninja.mohamy.Customers"
+        android:label="fragment_customers"
+        tools:layout="@layout/fragment_customers" >
+        <action
+            android:id="@+id/action_customers2_to_viewCustomerIssues"
+            app:destination="@id/viewCustomerIssues" />
+    </fragment>
+    <fragment
+        android:id="@+id/offes"
+        android:name="com.teraninja.mohamy.Offes"
+        android:label="fragment_offes"
+        tools:layout="@layout/fragment_offes" />
+    <fragment
+        android:id="@+id/viewCustomerIssues"
+        android:name="com.teraninja.mohamy.ViewCustomerIssues"
+        android:label="fragment_view_customer_issues"
+        tools:layout="@layout/fragment_view_customer_issues" >
+        <argument
+            android:name="ClientId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessions"
+        android:name="com.teraninja.mohamy.Sessions"
+        android:label="fragment_sessions"
+        tools:layout="@layout/fragment_sessions" >
+        <action
+            android:id="@+id/action_sessions_to_showDetilseSession"
+            app:destination="@id/showDetilseSession" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDetilseSession"
+        android:name="com.teraninja.mohamy.ShowDetilseSession"
+        android:label="fragment_show_detilse_session"
+        tools:layout="@layout/fragment_show_detilse_session" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_showDetilseSession_to_homeEmployee"
+            app:destination="@id/homeEmployee" />
+    </fragment>
+    <fragment
+        android:id="@+id/elmalya"
+        android:name="com.teraninja.mohamy.Elmalya"
+        android:label="fragment_elmalya"
+        tools:layout="@layout/fragment_elmalya" >
+        <action
+            android:id="@+id/action_elmalya_to_detilseMaliya"
+            app:destination="@id/detilseMaliya" />
+    </fragment>
+    <fragment
+        android:id="@+id/trial"
+        android:name="com.teraninja.mohamy.Trial"
+        android:label="fragment_trial"
+        tools:layout="@layout/fragment_trial" >
+        <action
+            android:id="@+id/action_trial_to_showDetilseTrial"
+            app:destination="@id/showDetilseTrial" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDetilseTrial"
+        android:name="com.teraninja.mohamy.ShowDetilseTrial"
+        android:label="fragment_show_detilse_trial"
+        tools:layout="@layout/fragment_show_detilse_trial" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_showDetilseTrial_to_showDetilseSession"
+            app:destination="@id/showDetilseSession" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTask"
+        android:name="com.teraninja.mohamy.AllTask"
+        android:label="fragment_all_task"
+        tools:layout="@layout/fragment_all_task" >
+        <action
+            android:id="@+id/action_allTask_to_detilseTases2"
+            app:destination="@id/detilseTases" />
+    </fragment>
+    <fragment
+        android:id="@+id/detilseMaliya"
+        android:name="com.teraninja.mohamy.DetilseMaliya"
+        android:label="fragment_detilse_maliya"
+        tools:layout="@layout/fragment_detilse_maliya" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeClient"
+        android:name="com.teraninja.mohamy.HomeClient"
+        android:label="fragment_home_client"
+        tools:layout="@layout/fragment_home_client" >
+        <action
+            android:id="@+id/action_homeClient_to_consultings"
+            app:destination="@id/consultings" />
+        <action
+            android:id="@+id/action_homeClient_to_offes"
+            app:destination="@id/offes" />
+        <action
+            android:id="@+id/action_homeClient_to_trialClient"
+            app:destination="@id/trialClient" />
+        <action
+            android:id="@+id/action_homeClient_to_login_Customer"
+            app:destination="@id/login_Customer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentVerfiyNumberByPassword"
+        android:name="com.teraninja.mohamy.FragmentVerfiyNumberByPassword"
+        android:label="fragment_verfiy_number_by_password"
+        tools:layout="@layout/fragment_verfiy_number_by_password" >
+        <action
+            android:id="@+id/action_fragmentVerfiyNumberByPassword_to_newPassword"
+            app:destination="@id/newPassword" />
+        <argument
+            android:name="number"
+            app:argType="string"
+            android:defaultValue="def" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            android:defaultValue="def" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultings"
+        android:name="com.teraninja.mohamy.Consultings"
+        android:label="fragment_consultings"
+        tools:layout="@layout/fragment_consultings" />
+    <fragment
+        android:id="@+id/trialClient"
+        android:name="com.teraninja.mohamy.TrialClient"
+        android:label="fragment_trial_client"
+        tools:layout="@layout/fragment_trial_client" />
+    <fragment
+        android:id="@+id/detilseTases"
+        android:name="com.teraninja.mohamy.DetilseTases"
+        android:label="fragment_detilse_tases"
+        tools:layout="@layout/fragment_detilse_tases" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detilseTases_to_filterDetilseTaskes"
+            app:destination="@id/filterDetilseTaskes" />
+        <action
+            android:id="@+id/action_detilseTases_to_showDetilseSession"
+            app:destination="@id/showDetilseSession" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterDetilseTaskes"
+        android:name="com.teraninja.mohamy.FilterDetilseTaskes"
+        android:label="fragment_filter_detilse_taskes"
+        tools:layout="@layout/fragment_filter_detilse_taskes" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/call_Medie"
+        android:name="com.teraninja.mohamy.Call_Medie"
+        android:label="fragment_call__medie"
+        tools:layout="@layout/fragment_call__medie" >
+        <action
+            android:id="@+id/action_call_Medie_to_callFiltering"
+            app:destination="@id/callFiltering" />
+    </fragment>
+    <fragment
+        android:id="@+id/callFiltering"
+        android:name="com.teraninja.mohamy.CallFiltering"
+        android:label="fragment_call_filtering"
+        tools:layout="@layout/fragment_call_filtering" />
+</navigation>

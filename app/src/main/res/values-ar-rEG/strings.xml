@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">محامي</string>
+    <string name="skip">تخطي</string>
+    <string name="welcome_to_the_lawyer_app">مرحباً بك في تطبيق محامي</string>
+    <string name="development_by">تم التطوير بواسطه </string>
+    <string name="company_tera_ninja_2022">شركه تيرا نبنجا 2022</string>
+    <string name="login">Login</string>
+    <string name="Signemployee">تسجيل الدخول كموظف</string>
+    <string name="sign_in_as_a_customer">تسجيل الدخول كعميل</string>
+    <string name="register">انشاء حساب</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="number_phone">رقم الجوال</string>
+    <string name="password">كلمه المرور</string>
+    <string name="forget_password">نسيت كلمه المرور...؟</string>
+    <string name="password_recovery">استرداد كلمه المرور</string>
+    <string name="next">التالي</string>
+    <string name="ent">برجاء ادخال الرقم المسجل عليه الحساب</string>
+    <string name="Activation_Code">الكود التفعيلي</string>
+    <string name="please_enter_the_activation_code">برجاء ادخال الكود التفعيلي</string>
+    <string name="Resend">اعاده ارسال الكود </string>
+    <string name="please_enter_the_new_password">برجاء ادخال كلمه المرور الجديده</string>
+    <string name="new_password">كلمه المرور الجديده</string>
+    <string name="save">حفظ</string>
+    <string name="confirm_password">اعاده كتابه كلمه المرور</string>
+    <string name="number_phonen">رقم الجوال</string>
+    <string name="i_agree_to_the_terms_of_use">اوافق علي شروط الاستخدام والخصوصيه</string>
+    <string name="registers">تسجيل</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="email">الايميل</string>
+    <string name="create_new_account"> انشاء حساب جديد</string>
+    <string name="latest_tasks">Latest tasks</string>
+    <string name="salary">Salary</string>
+    <string name="total_deductions">total deductions</string>
+    <string name="total_benefits">total benefits</string>
+    <string name="total_allowances">total allowances</string>
+    <string name="basic_salary">basic salary</string>
+    <string name="net_wage">net wage</string>
+    <string name="orders">Orders</string>
+    <string name="data">Data</string>
+    <string name="type">type</string>
+    <string name="case2">case2</string>
+    <string name="customers">customers</string>
+    <string name="office">Office</string>
+    <string name="about_whit_office">about whit office</string>
+</resources>

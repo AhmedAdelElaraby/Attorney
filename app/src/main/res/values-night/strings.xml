@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skip">Skip</string>
+    <string name="welcome_to_the_lawyer_app">Welcome to the lawyer app</string>
+    <string name="development_by">Development By</string>
+    <string name="company_tera_ninja_2022">company tera ninja 2022</string>
+    <string name="login">Login</string>
+    <string name="Signemployee">Sign in as an employee</string>
+    <string name="sign_in_as_a_customer">Sign in as a customer</string>
+    <string name="register">Create an account</string>
+    <string name="sign_in">sign in</string>
+    <string name="number_phone">number phone</string>
+    <string name="password">password</string>
+    <string name="forget_password">Forget password...?</string>
+    <string name="password_recovery">Password recovery</string>
+    <string name="next">next</string>
+    <string name="ent">Please enter the number the account is registered to</string>
+    <string name="Activation_Code">Activation Code</string>
+    <string name="please_enter_the_activation_code">Please enter the activation code</string>
+    <string name="Resend">Resend the code</string>
+    <string name="please_enter_the_new_password">Please enter the new password</string>
+    <string name="new_password">new password</string>
+    <string name="save">save</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="number_phonen">number phone</string>
+    <string name="i_agree_to_the_terms_of_use">I agree to the terms of use</string>
+    <string name="registers">Register</string>
+    <string name="user_name">user name</string>
+    <string name="email">Email</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="latest_tasks">Latest tasks</string>
+    <string name="salary">Salary</string>
+    <string name="total_deductions">total deductions</string>
+    <string name="total_benefits">total benefits</string>
+    <string name="total_allowances">total allowances</string>
+    <string name="basic_salary">basic salary</string>
+    <string name="net_wage">net wage</string>
+    <string name="orders">Orders</string>
+    <string name="data">Data</string>
+    <string name="type">type</string>
+    <string name="case2">case2</string>
+    <string name="customers">customers</string>
+    <string name="office">Office</string>
+    <string name="about_whit_office">about whit office</string>
+</resources>

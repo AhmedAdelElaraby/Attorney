@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".UI.FragmentSessionFromTrial">
+
+        <TextView
+            android:id="@+id/DataType"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/item_btn_register"
+            android:gravity="center"
+
+            android:text="الجلسات القادمة"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toStartOf="@id/case3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/case3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/item_filter"
+            android:gravity="center"
+            android:text="الجلسات السابقة"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/DataType"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/Data"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center"
+            android:text="التوقيتات"
+            android:textColor="#BA8A13"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/case3" />
+
+        <TextView
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:layout_constraintStart_toEndOf="@id/Data"
+            app:layout_constraintTop_toBottomOf="@id/case3"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="#BA8A13"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+
+            android:id="@+id/space" />
+
+        <TextView
+            android:id="@+id/typefile"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center"
+            android:text="الدائره"
+            android:textColor="#BA8A13"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toEndOf="@id/space"
+            app:layout_constraintTop_toBottomOf="@id/case3" />
+
+        <TextView
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:layout_constraintStart_toEndOf="@id/typefile"
+            app:layout_constraintTop_toBottomOf="@id/case3"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="#BA8A13"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+
+            android:id="@+id/space2" />
+
+        <TextView
+            android:id="@+id/case2"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center"
+            android:text="المحكمه"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="#BA8A13"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toEndOf="@id/space2"
+            app:layout_constraintTop_toBottomOf="@id/case3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#BA8A13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Data"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+
+            tools:listitem="@layout/itemlastandnext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+
+            tools:listitem="@layout/itemlastandnext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
